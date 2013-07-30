@@ -5,6 +5,7 @@
 
 h1 = @article.title
 p = @article.summary
+p: strong = @article.category.name
 hr
 = simple_format @article.body
 
