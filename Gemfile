@@ -30,3 +30,13 @@ gem 'slim-rails', '~> 2.0.1'
 # Simple form
 gem 'simple_form', '~> 3.0.0.rc'
 
+# Gemas do prof
+group :development do
+  # Contem gerador de locales
+  gem 'kickoff_rails', '~> 0.0.6'
+  # Melhora mensagens de erro
+  gem 'better_errors',     '~> 0.9.0'
+  # Permite alterar código quando acontece um erro
+  gem 'binding_of_caller', '~> 0.7.1'
+  gem 'xray-rails',        '~> 0.1.6'
+end
