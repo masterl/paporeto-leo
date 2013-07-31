@@ -30,6 +30,12 @@ gem 'slim-rails', '~> 2.0.1'
 # Simple form
 gem 'simple_form', '~> 3.0.0.rc'
 
+# Autenticação
+gem 'devise', '~> 3.0.0'
+
+# Uploader de imagem
+gem 'uploadbox', '~>0.0.4'
+
 # Gemas do prof
 group :development do
   # Contem gerador de locales

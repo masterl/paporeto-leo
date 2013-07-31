@@ -1,6 +1,6 @@
 h1 Artigos
 
-table.table
+table.table.table-striped
   tr
     th Título
     th Resumo
@@ -13,10 +13,11 @@ table.table
       td = article.summary
       td = article.category.name
       td
-        .btn-group
-          = link_to 'Ver', article, class: 'btn'
-          = link_to 'Editar', edit_article_path(article), class: 'btn'
-          = link_to 'Excluir', article, class: 'btn', :confirm => 'Tem certeza?', :method => :delete
+        div align="right"
+          .btn-group
+            = link_to 'Ver', article, class: 'btn btn-small'
+            = link_to 'Editar', edit_article_path(article), class: 'btn btn-small'
+            = link_to 'Excluir', article, class: 'btn btn-small btn-danger', :confirm => 'Tem certeza?', :method => :delete
 
 br
 

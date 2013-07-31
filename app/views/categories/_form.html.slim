@@ -5,4 +5,5 @@
     = f.input :name
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, class: 'btn btn-primary'
+    = link_to 'Cancelar', categories_path, class: 'btn'
