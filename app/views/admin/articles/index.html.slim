@@ -1,0 +1,24 @@
+h1 Artigos
+
+table.table.table-striped
+  tr
+    th Título
+    th Resumo
+    th Categoria
+    th
+
+  - @articles.each do |article|
+    tr
+      td = article.title
+      td = article.summary
+      td = article.category.name
+      td
+        div align="right"
+          .btn-group
+            = link_to 'Ver', [:admin, article], class: 'btn btn-small'
+            = link_to 'Editar', edit_admin_article_path(article), class: 'btn btn-small'
+            = link_to 'Excluir', [:admin, article], class: 'btn btn-small btn-danger', :confirm => 'Tem certeza?', :method => :delete
+= paginate @articles, theme: 'twitter-bootstrap'
+br
+
+= link_to 'Novo artigo', new_admin_article_path, class: 'btn btn-primary'
