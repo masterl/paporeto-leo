@@ -42,6 +42,12 @@ gem 'bootstrap-kaminari-views', '~> 0.0.2'
 # Uploader de imagem
 gem 'uploadbox', '~>0.0.4'
 
+# Gemas heroku
+group :production do
+    gem 'pg'
+    gem 'rails_12factor'
+end
+
 # Gemas do prof
 group :development do
   # Contem gerador de locales
