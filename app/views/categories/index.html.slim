@@ -14,6 +14,7 @@ table.table.table-striped
             = link_to 'Ver', category, class: 'btn btn-small'
             = link_to 'Editar', edit_category_path(category), class: 'btn btn-small'
             = link_to 'Excluir', category, class: 'btn btn-small btn-danger', :confirm => 'Tem certeza?', :method => :delete
+= paginate @categories, theme: 'twitter-bootstrap'
 br
 
 = link_to 'Nova categoria', new_category_path, class: 'btn btn-primary'
