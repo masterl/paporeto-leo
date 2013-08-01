@@ -18,7 +18,7 @@ table.table.table-striped
             = link_to 'Ver', article, class: 'btn btn-small'
             = link_to 'Editar', edit_article_path(article), class: 'btn btn-small'
             = link_to 'Excluir', article, class: 'btn btn-small btn-danger', :confirm => 'Tem certeza?', :method => :delete
-
+= paginate @articles, theme: 'twitter-bootstrap'
 br
 
 = link_to 'Novo artigo', new_article_path, class: 'btn btn-primary'

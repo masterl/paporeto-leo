@@ -1,17 +1,12 @@
-p#notice = notice
+- if notice
+    .alert
+        button.close data-dismiss="alert" type="button"
+        =notice
 
-p
-  strong Name:
-  = @user.name
+h1 = @user.name
 p
   strong Email:
-  = @user.email
-p
-  strong Password:
-  = @user.password
-p
-  strong Password confirmation:
-  = @user.password_confirmation
+  = "   #{@user.email}"
 
 = link_to 'Edit', edit_user_path(@user)
 '|

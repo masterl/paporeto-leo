@@ -33,6 +33,12 @@ gem 'simple_form', '~> 3.0.0.rc'
 # Autenticação
 gem 'devise', '~> 3.0.0'
 
+# Paginação
+gem 'kaminari', '~> 0.14.1'
+
+# Gerar views kaminari com twitter bootstrap
+gem 'bootstrap-kaminari-views', '~> 0.0.2'
+
 # Uploader de imagem
 gem 'uploadbox', '~>0.0.4'
 

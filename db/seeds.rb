@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Category.destroy_all
+Category.create!(name: 'Notícias')
+Category.create!(name: 'Esportes')
+Category.create!(name: 'Entretenimento')
+
+Article.destroy_all
+100.times do |n|
+  Article.create!(title: "Lorem #{n}", category: Category.all.sample,body: 'Mussum Ipsum Mahaba luds',summary: 'Ipsum')
+end

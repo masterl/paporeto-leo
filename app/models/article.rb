@@ -5,6 +5,8 @@ class Article < ActiveRecord::Base
 
   belongs_to :category
 
+  paginates_per 15
+
   def to_param
     "#{id} #{title}".parameterize
   end
