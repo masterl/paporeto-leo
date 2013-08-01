@@ -17,9 +17,14 @@ html
                 = link_to 'Artigos', articles_path
               li class="#{'active' if params[:controller] == 'categories'}"
                 = link_to 'Categorias', categories_path
+              li class="#{'active' if params[:controller] == 'users'}"
+                = link_to 'Admins', users_path
             ul.nav.pull-right
               li
-                = link_to current_user.email, '#'
+                - if current_user.name.blank?
+                  = link_to current_user.email, '#'
+                - else
+                  = link_to current_user.name, '#'
               li
                 = link_to 'Sair', destroy_user_session_path, method: :delete
       - if notice
