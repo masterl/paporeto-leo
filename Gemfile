@@ -39,6 +39,12 @@ gem 'bootstrap-kaminari-views', '~> 0.0.2'
 # Uploader de imagem
 gem 'uploadbox', '~>0.0.4'
 
+# Frontend
+gem 'bourbon', '~> 3.1.8'
+gem 'neat', '~> 1.3.0'
+gem 'high_voltage', '~> 1.2.3'
+gem 'normalize-rails', '~> 2.1.1'
+
 # Gemas heroku
 group :production do
     gem 'pg'
