@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
   validates :title, :summary, :body, :category, presence: true
 
-  uploads_one :picture, thumb: [100,100], regular: [300, 200]
+  uploads_one :picture, thumb: [90,80], regular: [300, 200]
 
   belongs_to :category
 
