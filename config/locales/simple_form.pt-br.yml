@@ -20,6 +20,7 @@ pt-BR:
         body: Texto
         summary: Resumo
         category: Categoria
+        featured: Em destaque
       category:
         name: Nome
     # hints:
