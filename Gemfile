@@ -45,6 +45,9 @@ gem 'neat', '~> 1.3.0'
 gem 'high_voltage', '~> 1.2.3'
 gem 'normalize-rails', '~> 2.1.1'
 
+# Criador de lorem
+gem 'ffaker'
+
 # Gemas heroku
 group :production do
     gem 'pg'
