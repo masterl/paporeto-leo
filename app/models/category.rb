@@ -15,4 +15,8 @@ class Category < ActiveRecord::Base
     articles.where(featured: false)
   end
 
+  def to_param
+    "#{id} #{name}".parameterize
+  end
+
 end

@@ -1,13 +1,13 @@
-- @page_class= 'noticias type-section'
-- @title= 'Notícias'
+- @page_class= "#{@category.simple} type-section"
+- @title= @category.name
 
 -if @featured
   section#featured-article
-    article.noticias
+    article class="#{@category.simple}"
       -if @featured.picture?
         = image_tag @featured.picture.large, onload: "this.parentNode.style.backgroundImage = 'url('+this.src+')'"
       .article-inner
-        = link_to @featured do
+        = link_to [@featured.category,@featured] do
           .category = @featured.category.name
           h1 = @featured.title
 
@@ -17,7 +17,7 @@ section.latest-articles
 
     - @articles.each do |article|
       article
-        = link_to article do
+        = link_to [article.category,article] do
           = img article.picture.thumb if article.picture?
           h2 = truncate(article.title, length: 30)
           p = truncate(article.summary, lenght: 50)
