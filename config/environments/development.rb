@@ -29,6 +29,8 @@ Paporeto::Application.configure do
 
   config.action_controller.action_on_unpermitted_parameters = :raise
 
-  # devise
+  # email
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 end

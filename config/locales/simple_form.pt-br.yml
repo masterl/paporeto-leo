@@ -23,6 +23,12 @@ pt-BR:
         featured: Em destaque
       category:
         name: Nome
+    placeholders:
+      reader_article:
+        name: Nome
+        body: Conteúdo
+        email: Email
+        title: Título
     # hints:
     #   defaults:
     #     password: 'Mínimo de 8 caracteres.'
